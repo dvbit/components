@@ -21,7 +21,7 @@ class NullOutput : public output::FloatOutput, public Component {
   void write_state(float state) override {
     // Non fa nulla - il valore viene scartato
     // Opzionalmente puoi loggare il valore per debug:
-    // ESP_LOGD("NullOutput", "Received value: %.2f", state);
+    ESP_LOGD("NullOutput", "Received value: %.2f", state);
   }
 };
 
